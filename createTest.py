@@ -41,11 +41,6 @@ def loopA():
           time-=1
           t.sleep(1)
 
- 
-    # os.system('clear')
-# else:
-   # print("Your time is up!")
-
 def loopB():
         print("Your time is not up!")  
         input("Select Yes!")
