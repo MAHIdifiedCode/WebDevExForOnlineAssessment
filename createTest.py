@@ -22,7 +22,7 @@ for qp in QP:
     if (qp == QPTypeAssigned["_desc"]):
        QPForCand =  QP[qp]
        
-print(QPForCand)
+print((QPForCand))
 
 
 print("You have one hour to complete the assessment.")
@@ -42,8 +42,10 @@ def loopA():
           t.sleep(1)
 
 def loopB():
-        print("Your time is not up!")  
-        input("Select Yes!")
+            allQuestionsDict = QPForCand["Qset"]
+            for q in allQuestionsDict:
+                print (q)
+                input ("Enter your choice!\n")
 
 if __name__ == '__main__':
     Thread(target=loopB).start()
