@@ -22,9 +22,6 @@ for qp in QP:
     if (qp == QPTypeAssigned["_desc"]):
        QPForCand =  QP[qp]
        
-print((QPForCand))
-
-
 print("You have one hour to complete the assessment.")
 candidateStartsResp = input("\nPress Enter when ready.")
 print("Your time starts now!")
@@ -42,10 +39,21 @@ def loopA():
           t.sleep(1)
 
 def loopB():
-            allQuestionsDict = QPForCand["Qset"]
-            for q in allQuestionsDict:
-                print (q)
-                input ("Enter your choice!\n")
+            allQuestionsList = QPForCand["Qset"]
+            cnt = 0 #counter to store answers of questions
+            #arrays to store question number and corresponding candidate response
+            qNum = []
+            ans =  []
+            for q in allQuestionsList:
+                qNum.append(q.keys())
+                print (q) #3. candidate gets questions one by one on the screen and waits for candidate response for each que.
+                ans.append(input ("Enter your choice!\n")) #4. candidate responses are submitted and stored in json format
+            listToStrqNum = ' '.join([str(elem) for elem in qNum]) #converting list to string to store in json format
+            candidateResponses = {'candidate Info':[{'First Name': candidateFirstName,'Last Name': candidateLastName, 'email ID': candidateEmailId, 'Que': listToStrqNum, 'Ans': ans}]}
+            with open ('data.json', 'w') as f: 
+                 json.dump(candidateResponses, f)
+            f.close()
+            print ("Thanks for completing your assessment. Your responses were stored!") #. Gets a confirmation of submitted assessment
 
 if __name__ == '__main__':
     Thread(target=loopB).start()
