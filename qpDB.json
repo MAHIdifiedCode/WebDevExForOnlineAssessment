@@ -1,0 +1,16 @@
+{
+"dsaQP1" : {
+    "Q1" : "You have a box of 8 coins. Seven of them are normal fair coins, while the eighth has tails on both sides. You pick a coin at random from the box and toss it 3 times, and get three tails. What is the probability that the coin you chose was the one with tails on both sides?",
+    "Options1": "a.1/2 b.1/4 c.8/17 d.8/15 e.3/10",
+    "Q2" : "Given any undergraduate student, there is a 10% chance that they will join a graduate program. In an undergraduate class of 400 students, which of the following is CLOSEST to the probability that at least 50 of the students will be joining a graduate program?",
+    "Options2": "a.5% b.10% c.15% d.20% e.25%",
+    "Q3" : "You've spent the past week designing and fine-tuning a standard decision tree classifier based on 40 GB of historical data. You've cross-validated the\\nclassifier and its performance is excellent. When you arrive at work on Monday, you are told that another 10 GB of data have recently been acquired and\\nthat they also need to be used for training the model. A performance report of the model, based on both the historical and new data, is due by the middle\\nof the day. Which of the following BEST describes the likely feasibility of the requested task, and why?",
+    "Options3": "a.The requested task is most likely not feasible because 10 GB cannot be loaded to memory\\nb.The requested task is most likely not feasible since the decision tree will have to be rebuilt from scratch\\nc.The requested task is most likely not feasible since the decision tree will have to be rebuilt from scratch\\nd.The requested task is most likely feasible since you just need to break down the 10 GB of new data and feed it into the pre-existing decision tree model in order to update it\\ne.The requested task is most likely feasible since the model already ran on the much larger historical dataset and passed all the cross-validation benchmarks, so the much smaller new dataset won't have much impact on the model", 
+ },
+ "dsaQP2" : {
+    "_desc" : "dsaQP2"
+ },
+ "dsaQP3" : {
+    "_desc" : "dsaQP3"
+ }
+}
