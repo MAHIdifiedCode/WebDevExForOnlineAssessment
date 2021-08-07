@@ -13,16 +13,16 @@ f = open('sessDB.json',) #open and load session IDs database
 sessIDs = json.load(f)
 f.close()
 candidateSessInfo=random.sample(sessIDs.items(), 1) #2. candidate gets unique session based on random selection from session database {Ex. session Id, _desc:dsaQPx}. It determines the set of questions he is asked.
-print(candidateSessInfo)
 candidateQPTypeInfo = [item[1] for item in candidateSessInfo] #question paper type is a set of these questions. _desc:dsaQPx
-print(candidateQPTypeInfo)
 QPTypeAssigned = candidateQPTypeInfo[0] 
-
 f = open('qpDB.json',) #open and get question papers from QP database
 QP = json.load(f)
 f.close()
 for qp in QP:
-    print(qp)
+    if (qp == QPTypeAssigned["_desc"]):
+       QPForCand =  QP[qp]
+       
+print(QPForCand)
 
 
 print("You have one hour to complete the assessment.")

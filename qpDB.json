@@ -8,9 +8,15 @@
     "Options3": "a.The requested task is most likely not feasible because 10 GB cannot be loaded to memory\\nb.The requested task is most likely not feasible since the decision tree will have to be rebuilt from scratch\\nc.The requested task is most likely not feasible since the decision tree will have to be rebuilt from scratch\\nd.The requested task is most likely feasible since you just need to break down the 10 GB of new data and feed it into the pre-existing decision tree model in order to update it\\ne.The requested task is most likely feasible since the model already ran on the much larger historical dataset and passed all the cross-validation benchmarks, so the much smaller new dataset won't have much impact on the model" 
  },
  "dsaQP2" : {
-    "_desc" : "dsaQP2"
+    "Q1" : "A study is conducted to review infant mortality rates at hospitals across the country. The study finds that, among the 10 hospitals with the lowest infant mortality rates, 8 of them were in rural counties. The rural hospitals were remote, often understaffed, and had a significantly lower volume of total patients than urban hospitals did. Based on this study, which of the following conclusions would be MOST logical?",
+    "Options1": "a.Infants in rural communities likely receive a higher degree of care, because there are fewer patients for the hospitals to serve\\nb.If urban hospitals studied rural hospitals and adopted their practices, they could provide better infant care",
+    "Q2" : "Suppose you are monitoring distinct attributes of some website (e.g., click rate, number of users, user bandwidth, etc.). You run an experiment whereby you deploy the website in two different graphical designs, with each receiving 50% of the views. If the null hypothesis is that the graphical design has no effect, then as you increase the number of attributes you monitor, which of the following is MOST likely to happen? (Here, 'false positive' means rejecting the null hypothesis when one should not.)",
+    "Options2": "a.It becomes more likely for the experiment to yield a false positive\\nb.It becomes less likely for the experiment to yield a false positive"
  },
  "dsaQP3" : {
-    "_desc" : "dsaQP3"
+    "Q1" : "You've spent the past week designing and fine-tuning a standard decision tree classifier based on 40 GB of historical data. You've cross-validated the classifier and its performance is excellent. When you arrive at work on Monday, you are told that another 10 GB of data have recently been acquired and that they also need to be used for training the model. A performance report of the model, based on both the historical and new data, is due by the middle of the day. Which of the following BEST describes the likely feasibility of the requested task, and why?",
+    "Options1": "a.The requested task is most likely not feasible because 10 GB cannot be loaded to memory\\nb.The requested task is most likely feasible since you could just use a Naive Bayes classifier instead as it is much faster to train than a standard decision tree classifier",
+    "Q2" : "You are tuning a linear classifier that you suspect is overfitting your data. Which of the following is MOST likely to make the overfitting worse?",
+    "Options2": "a.Using k - fold cross-validation\\nb.Applying a more stringent regularization on the features"
  }
 }
